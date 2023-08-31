@@ -6,6 +6,7 @@ public class Main {
 
         int[] array1 = {23,5,4,56,567,8,3};
         System.out.println(minimum(array1));
+        System.out.println(parosszam(array1));
 
         int[] array = new int[20];
         System.out.println(Arrays.toString(method(array)));
@@ -29,5 +30,15 @@ public class Main {
             }
         }
        return minNum;
+    }
+
+    public static int parosszam(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
     }
 }
